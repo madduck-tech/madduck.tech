@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f2eee5"/>
+  <path d="M0 70h1200M0 140h1200M0 210h1200M0 280h1200M0 350h1200M0 420h1200M0 490h1200M0 560h1200M70 0v630M140 0v630M210 0v630M280 0v630M350 0v630M420 0v630M490 0v630M560 0v630M630 0v630M700 0v630M770 0v630M840 0v630M910 0v630M980 0v630M1050 0v630M1120 0v630" stroke="#17251f" stroke-opacity=".05"/>
+  <circle cx="925" cy="175" r="92" fill="#f5b82e"/>
+  <text x="78" y="255" fill="#17251f" font-family="Arial Black, sans-serif" font-size="112" font-weight="900" letter-spacing="-8">MAD DUCK</text>
+  <text x="84" y="350" fill="#ef6b36" font-family="Georgia, serif" font-size="78" font-style="italic">что-то кря.</text>
+  <path d="M731 427c39-76 148-89 225-49 33 17 85 5 117 27 46 31 19 89-44 105-104 27-347 10-298-83Z" fill="#f5b82e" stroke="#17251f" stroke-width="9"/>
+  <circle cx="975" cy="338" r="76" fill="#f5b82e" stroke="#17251f" stroke-width="9"/>
+  <path d="M1029 331c42-10 82 2 100 25-22 31-72 31-105 11-5-16-3-27 5-36Z" fill="#ef6b36" stroke="#17251f" stroke-width="9"/>
+  <circle cx="998" cy="315" r="9" fill="#17251f"/>
+  <path d="M765 521c95 18 221 18 327-1" fill="none" stroke="#397a8d" stroke-linecap="round" stroke-width="8"/>
+</svg>
