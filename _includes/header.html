@@ -1,0 +1,16 @@
+{% assign t = site.data.i18n[page.lang] %}
+<a class="skip-link" href="#content">{{ t.skip }}</a>
+<header class="site-header">
+  <a class="brand" href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" aria-label="{{ t.brand_label }}">
+    <span class="brand-mark" aria-hidden="true">MD</span>
+    <span>madduck.tech</span>
+  </a>
+  <div class="header-actions">
+    <nav class="site-nav" aria-label="{{ t.nav_label }}">
+      <a href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{{ t.nav_home }}</a>
+      <a href="{% if page.lang == 'en' %}{{ '/en/#projects' | relative_url }}{% else %}{{ '/#projects' | relative_url }}{% endif %}">{{ t.nav_projects }}</a>
+      <a href="{% if page.lang == 'en' %}{{ '/en/#blog' | relative_url }}{% else %}{{ '/#blog' | relative_url }}{% endif %}">{{ t.nav_blog }}</a>
+    </nav>
+    <a class="language-switch" href="{{ page.alternate_url | relative_url }}" lang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}" hreflang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}" aria-label="{{ t.language_label }}">{{ t.language_short }}</a>
+  </div>
+</header>

@@ -1,0 +1,64 @@
+ru:
+  skip: Перейти к содержанию
+  nav_label: Основная навигация
+  brand_label: Mad Duck, на главную
+  nav_home: Главная
+  nav_projects: Проекты
+  nav_blog: Блог
+  language_label: Switch to English
+  language_short: EN
+  hero_eyebrow: Независимая технологическая мастерская
+  hero_title: Смелые идеи.<br><em>С характером.</em>
+  hero_lead: Mad Duck создает открытые инструменты и делится практическими заметками для тех, кто строит продукты вместе с ИИ.
+  hero_action: Смотреть проекты
+  mascot_alt: Маскот Mad Duck — черная утка в очках с поднятыми большими пальцами
+  projects_eyebrow: Проекты
+  projects_title: Инструменты с характером
+  projects_intro: Наши проекты решают практические проблемы команд, которые уже пишут код вместе с агентами.
+  project_status: Open source · MIT
+  project_name: Gopnik
+  project_tagline: 'Ваш ИИ-агент говорит: «Готово». Gopnik пытается доказать обратное.'
+  project_description: Навык состязательной проверки, который атакует заявление о готовности изменения, проверяет поставленную ревизию и показывает, что доказано, а что нет.
+  project_action: Открыть на GitHub
+  project_story: История проекта
+  blog_eyebrow: Полевые заметки
+  blog_title: Блог
+  blog_intro: 'Разбираем разработку с ИИ без магического мышления: эксперименты, инструменты и выводы из реальной работы.'
+  read_article: Читать статью
+  empty_blog: Скоро здесь появятся новые материалы.
+  back_to_blog: Назад в блог
+  article_project_action: Попробовать Gopnik
+  original_language: Read in English
+  footer_note: Made with feathers & code
+en:
+  skip: Skip to content
+  nav_label: Primary navigation
+  brand_label: Mad Duck, home
+  nav_home: Home
+  nav_projects: Projects
+  nav_blog: Blog
+  language_label: Переключить на русский
+  language_short: RU
+  hero_eyebrow: Independent technology workshop
+  hero_title: Bold ideas.<br><em>Built with character.</em>
+  hero_lead: Mad Duck builds open tools and shares practical field notes for people creating products with AI.
+  hero_action: Explore projects
+  mascot_alt: The Mad Duck mascot, a black duck in glasses giving two thumbs up
+  projects_eyebrow: Projects
+  projects_title: Tools with character
+  projects_intro: Our projects solve practical problems for teams that already build software with coding agents.
+  project_status: Open source · MIT
+  project_name: Gopnik
+  project_tagline: Your coding agent says it works. Gopnik tries to prove it doesn't.
+  project_description: An adversarial verification skill that attacks the claim that a change is done, checks the delivered revision, and reports what was and was not proven.
+  project_action: View on GitHub
+  project_story: Read the story
+  blog_eyebrow: Field notes
+  blog_title: Blog
+  blog_intro: 'Building with AI without magical thinking: experiments, tools, and lessons from real work.'
+  read_article: Read article
+  empty_blog: More field notes are on the way.
+  back_to_blog: Back to blog
+  article_project_action: Try Gopnik
+  original_language: Читать по-русски
+  footer_note: Made with feathers & code

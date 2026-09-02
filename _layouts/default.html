@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5b82e">
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <meta property="og:title" content="{{ page.title | escape }}">
+    <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ page.image | default: '/og-image.svg' | absolute_url }}">
+    <meta property="og:site_name" content="Mad Duck">
+    <meta property="og:locale" content="{% if page.lang == 'ru' %}ru_RU{% else %}en_US{% endif %}">
+    {% if page.layout == 'post' %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url | absolute_url }}">
+    <link rel="alternate" hreflang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}" href="{{ page.alternate_url | absolute_url }}">
+    <link rel="alternate" hreflang="x-default" href="{% if page.lang == 'en' %}{{ page.alternate_url | absolute_url }}{% else %}{{ page.url | absolute_url }}{% endif %}">
+    <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+    <title>{{ page.title }}</title>
+    {% if page.layout == 'post' %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": {{ page.title | jsonify }},
+        "description": {{ page.description | jsonify }},
+        "datePublished": "{{ page.date | date_to_xmlschema }}",
+        "author": {"@type": "Organization", "name": "Mad Duck", "url": "{{ site.url }}"},
+        "publisher": {"@type": "Organization", "name": "Mad Duck", "url": "{{ site.url }}"},
+        "image": "{{ page.image | absolute_url }}",
+        "mainEntityOfPage": "{{ page.url | absolute_url }}",
+        "inLanguage": "{{ page.lang }}"
+      }
+    </script>
+    {% endif %}
+  </head>
+  <body class="{{ page.layout }}-page">
+    {% include header.html %}
+    <main id="content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

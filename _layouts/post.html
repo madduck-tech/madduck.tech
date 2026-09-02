@@ -1,0 +1,28 @@
+---
+layout: default
+---
+{% assign t = site.data.i18n[page.lang] %}
+<article class="article-shell">
+  <header class="article-header">
+    <a class="back-link" href="{% if page.lang == 'en' %}{{ '/en/#blog' | relative_url }}{% else %}{{ '/#blog' | relative_url }}{% endif %}"><span aria-hidden="true">←</span> {{ t.back_to_blog }}</a>
+    <p class="post-meta"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date_label }}</time><span>{{ page.category }}</span></p>
+    <h1>{{ page.title }}</h1>
+    <p class="article-deck">{{ page.description }}</p>
+  </header>
+  <figure class="article-hero">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt }}">
+  </figure>
+  <div class="article-grid">
+    <div class="article-content">
+      {{ content }}
+    </div>
+    <aside class="article-aside">
+      <div class="aside-card">
+        <span class="aside-label">Gopnik</span>
+        <p>{{ t.project_tagline }}</p>
+        <a class="button button-dark" href="https://github.com/madduck-tech/gopnik" rel="noreferrer">{{ t.article_project_action }} <span aria-hidden="true">↗</span></a>
+      </div>
+      <a class="translation-link" href="{{ page.alternate_url | relative_url }}" lang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}">{{ t.original_language }} <span aria-hidden="true">→</span></a>
+    </aside>
+  </div>
+</article>

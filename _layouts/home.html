@@ -1,0 +1,68 @@
+---
+layout: default
+---
+{% assign t = site.data.i18n[page.lang] %}
+<section class="hero section-shell">
+  <div class="hero-copy">
+    <p class="eyebrow">{{ t.hero_eyebrow }}</p>
+    <h1>{{ t.hero_title }}</h1>
+    <p class="lead">{{ t.hero_lead }}</p>
+    <a class="button button-primary" href="#projects">
+      {{ t.hero_action }}
+      <span aria-hidden="true">↓</span>
+    </a>
+  </div>
+  {% include mascot-scene.html %}
+</section>
+
+<section class="projects-section section-shell" id="projects">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">{{ t.projects_eyebrow }}</p>
+      <h2>{{ t.projects_title }}</h2>
+    </div>
+    <p>{{ t.projects_intro }}</p>
+  </div>
+  <article class="project-card">
+    <div class="project-number" aria-hidden="true">01</div>
+    <div class="project-copy">
+      <p class="project-status"><span></span>{{ t.project_status }}</p>
+      <h3>{{ t.project_name }}</h3>
+      <p class="project-tagline">{{ t.project_tagline }}</p>
+      <p>{{ t.project_description }}</p>
+      <div class="card-actions">
+        <a class="button button-dark" href="https://github.com/madduck-tech/gopnik" rel="noreferrer">{{ t.project_action }} <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="{% if page.lang == 'en' %}{{ '/en/blog/gopnik/' | relative_url }}{% else %}{{ '/blog/gopnik/' | relative_url }}{% endif %}">{{ t.project_story }} <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <div class="project-stamp" aria-hidden="true">NO<br>FAKE<br>GREEN</div>
+  </article>
+</section>
+
+<section class="blog-section section-shell" id="blog">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">{{ t.blog_eyebrow }}</p>
+      <h2>{{ t.blog_title }}</h2>
+    </div>
+    <p>{{ t.blog_intro }}</p>
+  </div>
+  {% assign localized_posts = site.posts | where: 'lang', page.lang %}
+  <div class="post-list">
+    {% for post in localized_posts %}
+    <article class="post-card">
+      <a class="post-image" href="{{ post.url | relative_url }}" tabindex="-1" aria-hidden="true">
+        <img src="{{ post.image | relative_url }}" alt="" loading="lazy">
+      </a>
+      <div class="post-card-copy">
+        <p class="post-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date_label }}</time><span>{{ post.category }}</span></p>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.description }}</p>
+        <a class="text-link" href="{{ post.url | relative_url }}">{{ t.read_article }} <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+    {% else %}
+    <p>{{ t.empty_blog }}</p>
+    {% endfor %}
+  </div>
+</section>

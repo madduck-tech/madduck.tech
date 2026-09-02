@@ -1,0 +1,25 @@
+title: Mad Duck
+description: Independent tools and field notes for people building with AI.
+url: https://madduck.tech
+baseurl: ""
+timezone: UTC
+markdown: kramdown
+permalink: pretty
+
+plugins:
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: Mad Duck
+
+exclude:
+  - AGENTS.md
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
