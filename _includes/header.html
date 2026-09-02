@@ -2,7 +2,7 @@
 <a class="skip-link" href="#content">{{ t.skip }}</a>
 <header class="site-header">
   <a class="brand" href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" aria-label="{{ t.brand_label }}">
-    <span class="brand-mark" aria-hidden="true">MD</span>
+    <img class="brand-mark" src="{{ '/assets/images/md-logo-512.png' | relative_url }}" width="38" height="38" alt="">
     <span>madduck.tech</span>
   </a>
   <div class="header-actions">

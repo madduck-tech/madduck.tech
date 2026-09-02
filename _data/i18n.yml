@@ -29,6 +29,7 @@ ru:
   back_to_blog: Назад в блог
   article_project_action: Попробовать Gopnik
   original_language: Read in English
+  telegram: Telegram-канал
   footer_note: Made with feathers & code
 en:
   skip: Skip to content
@@ -61,4 +62,5 @@ en:
   back_to_blog: Back to blog
   article_project_action: Try Gopnik
   original_language: Читать по-русски
+  telegram: Telegram channel
   footer_note: Made with feathers & code

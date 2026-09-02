@@ -17,7 +17,7 @@
     <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url | absolute_url }}">
     <link rel="alternate" hreflang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}" href="{{ page.alternate_url | absolute_url }}">
     <link rel="alternate" hreflang="x-default" href="{% if page.lang == 'en' %}{{ page.alternate_url | absolute_url }}{% else %}{{ page.url | absolute_url }}{% endif %}">
-    <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="icon" href="{{ '/assets/images/md-logo-512.png' | relative_url }}" type="image/png" sizes="512x512">
     <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
     <title>{{ page.title }}</title>
     {% if page.layout == 'post' %}

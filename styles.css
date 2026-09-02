@@ -128,16 +128,10 @@ a {
 }
 
 .brand-mark {
-  display: grid;
+  display: block;
   width: 38px;
   height: 38px;
-  place-items: center;
   border-radius: 50%;
-  color: var(--paper);
-  background: var(--ink);
-  font-family: "Unbounded", sans-serif;
-  font-size: 10px;
-  letter-spacing: -0.08em;
 }
 
 .header-actions,
@@ -629,6 +623,16 @@ a {
   text-transform: uppercase;
 }
 
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a {
+  color: inherit;
+  font-weight: 700;
+}
+
 /* Article */
 .article-shell {
   padding: 74px 0 90px;
@@ -1026,7 +1030,7 @@ a {
     padding-bottom: 22px;
   }
 
-  .site-footer span:last-child {
+  .footer-links span {
     display: none;
   }
 }
