@@ -5,12 +5,13 @@ layout: default
 <article class="article-shell">
   <header class="article-header">
     <a class="back-link" href="{% if page.lang == 'en' %}{{ '/en/#blog' | relative_url }}{% else %}{{ '/#blog' | relative_url }}{% endif %}"><span aria-hidden="true">←</span> {{ t.back_to_blog }}</a>
-    <p class="post-meta"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date_label }}</time><span>{{ page.category }}</span></p>
+    <p class="post-meta"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date_label }}</time><span>{{ page.category }}</span>{% if page.author %}<span>{{ page.author }}</span>{% endif %}{% if page.reading_time %}<span>{{ page.reading_time }}</span>{% endif %}</p>
     <h1>{{ page.title }}</h1>
-    <p class="article-deck">{{ page.description }}</p>
+    <p class="article-deck">{{ page.deck | default: page.description }}</p>
   </header>
   <figure class="article-hero">
     <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt }}">
+    {% if page.image_caption %}<figcaption>{{ page.image_caption }}</figcaption>{% endif %}
   </figure>
   <div class="article-grid">
     <div class="article-content">

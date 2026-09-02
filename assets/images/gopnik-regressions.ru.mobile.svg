@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="310" viewBox="0 0 390 310" role="img" aria-labelledby="title desc">
+  <title id="title">Коммиты с пометками регрессий и хотфиксов</title>
+  <desc id="desc">В первые примерно 28 дней было 8,9 коммита с такими пометками на 100 коммитов без слияний. В следующие примерно 28 дней — 3,9, на 56 процентов меньше.</desc>
+  <style>
+    :root { color-scheme: light dark; --bg:#f1f1ee; --ink:#16181b; --muted:#4b4f53; --line:#d9d8d2; --accent:#a85512; --old:#d8b89d; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#121417; --ink:#e9e7e2; --muted:#a7aab0; --line:#2b2f34; --accent:#f29b38; --old:#6a4b2d; } }
+    .bg{fill:var(--bg)} .title{fill:var(--ink);font:700 27px system-ui,sans-serif;letter-spacing:-.4px}
+    .delta{fill:var(--accent);font:700 17px ui-monospace,Menlo,monospace}.label{fill:var(--muted);font:14px ui-monospace,Menlo,monospace}
+    .value{fill:var(--ink);font:700 21px ui-monospace,Menlo,monospace}.old{fill:var(--old)}.new{fill:var(--accent)}
+  </style>
+  <rect class="bg" width="390" height="310"/>
+  <text class="title" x="22" y="38">Коммиты с пометками</text>
+  <text class="title" x="22" y="68">регрессий и хотфиксов</text>
+
+  <text class="label" x="22" y="112">Первые ≈28 дней</text>
+  <rect class="old" x="22" y="128" width="300" height="44" rx="5"/>
+  <text class="value" x="334" y="157">8,9</text>
+
+  <text class="label" x="22" y="214">Следующие ≈28 дней</text>
+  <rect class="new" x="22" y="230" width="132" height="44" rx="5"/>
+  <text class="value" x="166" y="259">3,9</text>
+  <text class="delta" x="232" y="259">−56%</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="310" viewBox="0 0 390 310" role="img" aria-labelledby="title desc">
+  <title id="title">Commits tagged regression or hotfix</title>
+  <desc id="desc">In the first roughly 28 days there were 8.9 such commits per 100 non-merge commits. In the next roughly 28 days, 3.9 — 56 percent fewer.</desc>
+  <style>
+    :root { color-scheme: light dark; --bg:#f1f1ee; --ink:#16181b; --muted:#4b4f53; --line:#d9d8d2; --accent:#a85512; --old:#d8b89d; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#121417; --ink:#e9e7e2; --muted:#a7aab0; --line:#2b2f34; --accent:#f29b38; --old:#6a4b2d; } }
+    .bg{fill:var(--bg)} .title{fill:var(--ink);font:700 27px system-ui,sans-serif;letter-spacing:-.4px}
+    .delta{fill:var(--accent);font:700 17px ui-monospace,Menlo,monospace}.label{fill:var(--muted);font:14px ui-monospace,Menlo,monospace}
+    .value{fill:var(--ink);font:700 21px ui-monospace,Menlo,monospace}.old{fill:var(--old)}.new{fill:var(--accent)}
+  </style>
+  <rect class="bg" width="390" height="310"/>
+  <text class="title" x="22" y="38">Commits tagged</text>
+  <text class="title" x="22" y="68">regression or hotfix</text>
+
+  <text class="label" x="22" y="112">First ≈28 days</text>
+  <rect class="old" x="22" y="128" width="300" height="44" rx="5"/>
+  <text class="value" x="334" y="157">8.9</text>
+
+  <text class="label" x="22" y="214">Next ≈28 days</text>
+  <rect class="new" x="22" y="230" width="132" height="44" rx="5"/>
+  <text class="value" x="166" y="259">3.9</text>
+  <text class="delta" x="232" y="259">−56%</text>
+</svg>

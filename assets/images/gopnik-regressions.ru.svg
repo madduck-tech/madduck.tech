@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="340" viewBox="0 0 960 340" role="img" aria-labelledby="title desc">
+  <title id="title">Коммиты с пометками регрессий и хотфиксов</title>
+  <desc id="desc">В первом окне длительностью примерно 28 суток было 8,9 коммита с такими пометками на 100 коммитов без слияний. В следующем окне — 3,9, на 56 процентов меньше.</desc>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --ground: #f1f1ee;
+      --surface: #fbfbf9;
+      --ink: #16181b;
+      --ink-soft: #4b4f53;
+      --rule: #d9d8d2;
+      --accent: #a85512;
+      --accent-soft: #d8b89d;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ground: #121417;
+        --surface: #191c20;
+        --ink: #e9e7e2;
+        --ink-soft: #9da1a6;
+        --rule: #2b2f34;
+        --accent: #f29b38;
+        --accent-soft: #5e4226;
+      }
+    }
+    .ground { fill: var(--ground); }
+    .title { fill: var(--ink); font: 600 32px system-ui, sans-serif; letter-spacing: -0.5px; }
+    .label { fill: var(--ink-soft); font: 17px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .value { fill: var(--ink); font: 600 24px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .delta { fill: var(--accent); font: 700 20px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .axis { stroke: var(--rule); stroke-width: 1; }
+    .before { fill: var(--accent-soft); }
+    .after { fill: var(--accent); }
+  </style>
+
+  <rect class="ground" width="960" height="340"/>
+
+  <text class="title" x="48" y="58">Коммиты с пометками регрессий и хотфиксов</text>
+
+  <line class="axis" x1="246" y1="88" x2="246" y2="286"/>
+
+  <text class="label" x="222" y="146" text-anchor="end">Первые ≈28 дней</text>
+  <rect class="before" x="246" y="112" width="560" height="52" rx="5"/>
+  <text class="value" x="824" y="146">8,9</text>
+
+  <text class="label" x="222" y="240" text-anchor="end">Следующие ≈28 дней</text>
+  <rect class="after" x="246" y="206" width="245" height="52" rx="5"/>
+  <text class="value" x="509" y="240">3,9</text>
+  <text class="delta" x="576" y="240">−56%</text>
+</svg>

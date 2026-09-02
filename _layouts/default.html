@@ -28,7 +28,7 @@
         "headline": {{ page.title | jsonify }},
         "description": {{ page.description | jsonify }},
         "datePublished": "{{ page.date | date_to_xmlschema }}",
-        "author": {"@type": "Organization", "name": "Mad Duck", "url": "{{ site.url }}"},
+        "author": {% if page.author and page.author != 'Mad Duck' %}{"@type": "Person", "name": {{ page.author | jsonify }}}{% else %}{"@type": "Organization", "name": "Mad Duck", "url": "{{ site.url }}"}{% endif %},
         "publisher": {"@type": "Organization", "name": "Mad Duck", "url": "{{ site.url }}"},
         "image": "{{ page.image | absolute_url }}",
         "mainEntityOfPage": "{{ page.url | absolute_url }}",
