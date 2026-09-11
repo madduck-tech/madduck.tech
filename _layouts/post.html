@@ -2,14 +2,14 @@
 layout: default
 ---
 {% assign t = site.data.i18n[page.lang] %}
-<article class="article-shell">
+<article class="article-shell shell">
   <header class="article-header">
-    <a class="back-link" href="{% if page.lang == 'en' %}{{ '/en/#blog' | relative_url }}{% else %}{{ '/#blog' | relative_url }}{% endif %}"><span aria-hidden="true">←</span> {{ t.back_to_blog }}</a>
+    <a class="back-link" href="{% if page.lang == 'en' %}{{ '/en/#notes' | relative_url }}{% else %}{{ '/#notes' | relative_url }}{% endif %}"><span aria-hidden="true">←</span> {{ t.back_to_blog }}</a>
     <p class="post-meta"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date_label }}</time><span>{{ page.category }}</span>{% if page.author %}<span>{{ page.author }}</span>{% endif %}{% if page.reading_time %}<span>{{ page.reading_time }}</span>{% endif %}</p>
     <h1>{{ page.title }}</h1>
     <p class="article-deck">{{ page.deck | default: page.description }}</p>
   </header>
-  <figure class="article-hero">
+  <figure class="article-hero{% if page.image contains 'article-' or page.image_fit == 'contain' %} article-hero-illustration{% endif %}">
     <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt }}">
     {% if page.image_caption %}<figcaption>{{ page.image_caption }}</figcaption>{% endif %}
   </figure>
@@ -18,11 +18,13 @@ layout: default
       {{ content }}
     </div>
     <aside class="article-aside">
+      {% if page.translation_key == 'gopnik' %}
       <div class="aside-card">
-        <span class="aside-label">Gopnik</span>
-        <p>{{ t.project_tagline }}</p>
+        <span class="aside-label">GOPNIK</span>
+        <p>{{ t.gopnik_tagline }}</p>
         <a class="button button-dark" href="https://github.com/madduck-tech/gopnik" rel="noreferrer">{{ t.article_project_action }} <span aria-hidden="true">↗</span></a>
       </div>
+      {% endif %}
       <a class="translation-link" href="{{ page.alternate_url | relative_url }}" lang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}">{{ t.original_language }} <span aria-hidden="true">→</span></a>
     </aside>
   </div>

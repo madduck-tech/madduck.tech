@@ -2,65 +2,65 @@ ru:
   skip: Перейти к содержанию
   nav_label: Основная навигация
   brand_label: Mad Duck, на главную
-  nav_home: Главная
   nav_projects: Проекты
-  nav_blog: Блог
+  nav_blog: Заметки
+  nav_about: О нас
   language_label: Switch to English
   language_short: EN
-  hero_eyebrow: Независимая технологическая мастерская
-  hero_title: Смелые идеи.<br><em>С характером.</em>
-  hero_lead: Mad Duck создает открытые инструменты и делится практическими заметками для тех, кто строит продукты вместе с ИИ.
-  hero_action: Смотреть проекты
-  mascot_alt: Маскот Mad Duck — черная утка в очках с поднятыми большими пальцами
-  projects_eyebrow: Проекты
-  projects_title: Инструменты с характером
-  projects_intro: Наши проекты решают практические проблемы команд, которые уже пишут код вместе с агентами.
-  project_status: Open source · MIT
-  project_name: Gopnik
-  project_tagline: 'Ваш ИИ-агент говорит: «Готово». Gopnik пытается доказать обратное.'
-  project_description: Навык состязательной проверки, который атакует заявление о готовности изменения, проверяет поставленную ревизию и показывает, что доказано, а что нет.
-  project_action: Открыть на GitHub
+  menu_open: Открыть меню
+  menu_close: Закрыть меню
+  mascot_alt: Маскот Mad Duck — чёрная утка в очках с поднятыми большими пальцами
+  hero_lead: Open-source инструменты, эксперименты<br>и заметки о разработке с ИИ.
+  hero_image_alt: Чёрная утка Mad Duck в очках с жёлтым отражением
+  hero_scribble: SAME IDEAS.<br>DIFFERENT DUCK.
+  projects_title: ПРОЕКТЫ
+  all_projects: ВСЕ ПРОЕКТЫ
+  gopnik_tagline: ИИ-агенты отлично говорят «готово».<br>Gopnik проверяет, не врут ли они.
+  gopnik_description: Проверяет, не верит ли тебе ИИ-агент. Автоматические ревью, валидация и здравый смысл.
+  gopnik_image_alt: Утка Gopnik в спортивной одежде с жёлтой деталью
   project_story: История проекта
-  blog_eyebrow: Полевые заметки
-  blog_title: Блог
-  blog_intro: 'Разбираем разработку с ИИ без магического мышления: эксперименты, инструменты и выводы из реальной работы.'
-  read_article: Читать статью
+  konstruktor_description: Автономный инженер, который берёт задачу и пытается решить её до результата.
+  konstruktor_action: О проекте
+  konstruktor_image_alt: Утка-конструктор в жёлтой каске на стройке
+  blog_title: ЗАМЕТКИ
+  all_notes: ВСЕ ЗАМЕТКИ
+  read_article: ЧИТАТЬ
   empty_blog: Скоро здесь появятся новые материалы.
-  back_to_blog: Назад в блог
-  article_project_action: Попробовать Gopnik
+  back_to_blog: Назад к заметкам
+  article_project_action: Открыть Gopnik
   original_language: Read in English
-  telegram: Telegram-канал
-  footer_note: Made with feathers & code
+  footer_note: Делаем инструменты, которых нам не хватало.<br>Открыто. С характером.
+  footer_image_alt: Утка на скале с жёлтым шарфом
 en:
   skip: Skip to content
   nav_label: Primary navigation
   brand_label: Mad Duck, home
-  nav_home: Home
   nav_projects: Projects
-  nav_blog: Blog
+  nav_blog: Notes
+  nav_about: About
   language_label: Переключить на русский
   language_short: RU
-  hero_eyebrow: Independent technology workshop
-  hero_title: Bold ideas.<br><em>Built with character.</em>
-  hero_lead: Mad Duck builds open tools and shares practical field notes for people creating products with AI.
-  hero_action: Explore projects
+  menu_open: Open menu
+  menu_close: Close menu
   mascot_alt: The Mad Duck mascot, a black duck in glasses giving two thumbs up
-  projects_eyebrow: Projects
-  projects_title: Tools with character
-  projects_intro: Our projects solve practical problems for teams that already build software with coding agents.
-  project_status: Open source · MIT
-  project_name: Gopnik
-  project_tagline: Your coding agent says it works. Gopnik tries to prove it doesn't.
-  project_description: An adversarial verification skill that attacks the claim that a change is done, checks the delivered revision, and reports what was and was not proven.
-  project_action: View on GitHub
-  project_story: Read the story
-  blog_eyebrow: Field notes
-  blog_title: Blog
-  blog_intro: 'Building with AI without magical thinking: experiments, tools, and lessons from real work.'
-  read_article: Read article
-  empty_blog: More field notes are on the way.
-  back_to_blog: Back to blog
-  article_project_action: Try Gopnik
+  hero_lead: Open-source tools, experiments,<br>and notes on building with AI.
+  hero_image_alt: The black Mad Duck wearing glasses with a yellow reflection
+  hero_scribble: SAME IDEAS.<br>DIFFERENT DUCK.
+  projects_title: PROJECTS
+  all_projects: ALL PROJECTS
+  gopnik_tagline: AI agents are very good at saying “done”.<br>Gopnik checks whether they are lying.
+  gopnik_description: Checks whether your AI agent is merely convinced. Automated reviews, validation, and common sense.
+  gopnik_image_alt: The Gopnik duck in a tracksuit with a yellow accent
+  project_story: Project story
+  konstruktor_description: An autonomous engineer that takes a task and tries to solve it all the way to a result.
+  konstruktor_action: ABOUT THE PROJECT
+  konstruktor_image_alt: A construction duck in a yellow hard hat on a building site
+  blog_title: NOTES
+  all_notes: ALL NOTES
+  read_article: READ
+  empty_blog: More notes are on the way.
+  back_to_blog: Back to notes
+  article_project_action: View Gopnik
   original_language: Читать по-русски
-  telegram: Telegram channel
-  footer_note: Made with feathers & code
+  footer_note: We make the tools we were missing.<br>Openly. With character.
+  footer_image_alt: A duck on a rock wearing a yellow scarf

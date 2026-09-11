@@ -1,8 +1,13 @@
 {% assign t = site.data.i18n[page.lang] %}
-<footer class="site-footer">
-  <span>© 2026 Mad Duck</span>
-  <div class="footer-links">
-    <a href="https://t.me/madducktech">{{ t.telegram }}</a>
-    <span>{{ t.footer_note }}</span>
+<footer class="site-footer section-pad" id="about">
+  <div class="footer-manifesto">GOOD<br>TOOLS,<br>BETTER<br>PEOPLE<span class="yellow-stroke" aria-hidden="true"></span></div>
+  <div class="footer-brand">
+    <div class="brand footer-logo">MAD DUCK</div>
+    <div class="descriptor">INDEPENDENT ENGINEERING WORKSHOP</div>
+    <p>{{ t.footer_note }}</p>
+    <div class="socials"><a href="https://github.com/madduck-tech">GITHUB</a><a href="https://t.me/madducktech">TELEGRAM</a></div>
   </div>
+  <div class="footer-art"><img src="{{ '/assets/images/footer-duck.jpg' | relative_url }}" alt="{{ t.footer_image_alt }}" loading="lazy"></div>
+  <div class="footer-code">IDEAS<br>CODE<br>DUCKS<br>FREEDOM</div>
+  <div class="footer-copyright">© 2026 MAD DUCK</div>
 </footer>
