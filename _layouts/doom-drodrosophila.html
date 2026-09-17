@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+  {% assign common = site.data.i18n[page.lang] %}
+  {% assign t = common.doom_fly %}
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="{{ page.description | escape }}">
+    <meta property="og:title" content="{{ page.title | escape }}">
+    <meta property="og:description" content="{{ page.description | escape }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:site_name" content="Mad Duck">
+    <meta property="og:locale" content="{% if page.lang == 'ru' %}ru_RU{% else %}en_US{% endif %}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url | absolute_url }}">
+    <link rel="alternate" hreflang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}" href="{{ page.alternate_url | absolute_url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ '/experiments/doom-drodrosophila/' | absolute_url }}">
+    <link rel="icon" href="{{ '/assets/images/md-logo-512.png' | relative_url }}" type="image/png" sizes="512x512">
+    <link rel="stylesheet" href="{{ '/assets/experiments/doom-drodrosophila/demo.css' | relative_url }}">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#experiment">{{ common.skip }}</a>
+    <header class="lab-header">
+      <a class="lab-brand" href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" aria-label="{{ common.brand_label }}">
+        <span class="lab-brand-mark" aria-hidden="true">MD</span>
+        <span>MAD DUCK / LAB</span>
+      </a>
+      <div class="lab-header-actions">
+        <a class="lab-language" href="{{ page.alternate_url | relative_url }}" lang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}">{{ t.language }}</a>
+        <a class="lab-back" href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">← {{ t.back }}</a>
+      </div>
+    </header>
+
+    <main id="experiment" class="lab-shell" tabindex="-1">
+      <section class="lab-intro" aria-labelledby="lab-title">
+        <p class="lab-eyebrow">{{ t.eyebrow }}</p>
+        <h1 id="lab-title">{{ t.title }}</h1>
+        <p>{{ t.description }}</p>
+      </section>
+
+      <section class="instrument" aria-label="{{ t.title }}">
+        <div class="instrument-bar">
+          <div><span>{{ t.state }}</span><strong id="experiment-state" role="status">—</strong></div>
+          <div><span>{{ t.region }}</span><strong id="current-region">—</strong></div>
+          <div><span>{{ t.coverage }}</span><strong id="coverage-count">—</strong></div>
+        </div>
+        <div class="viewport-grid">
+          <figure class="viewport viewport-stage">
+            <figcaption>{{ t.stage }}</figcaption>
+            <canvas id="fly-canvas" tabindex="0" aria-label="{{ t.stage }}" aria-describedby="keyboard-hint">{{ t.error }}</canvas>
+            <p class="viewport-hint">{{ t.drag }}</p>
+          </figure>
+          <figure class="viewport viewport-brain">
+            <figcaption>{{ t.brain }}</figcaption>
+            <canvas id="brain-canvas" aria-label="{{ t.brain }}">{{ t.error }}</canvas>
+            <div class="brain-key">
+              {% for signal in t.signals %}
+                <label data-signal="{{ signal[0] }}"><span>{{ signal[1] }}</span><meter min="0" max="1" value="0" aria-label="{{ signal[1] }}"></meter></label>
+              {% endfor %}
+            </div>
+          </figure>
+          <div id="lab-loading" class="lab-loading" role="status">{{ t.loading }}</div>
+          <div id="webgl-error" class="webgl-error" role="alert" hidden><p>{{ t.error }}</p><button id="retry" type="button">{{ t.retry }}</button></div>
+          <noscript><p class="webgl-error">{{ t.error }}</p></noscript>
+        </div>
+        <div class="transport">
+          <button id="play-toggle" class="transport-primary" type="button" disabled>{{ t.run }}</button>
+          <button id="replay" type="button" disabled>↺ {{ t.reset }}</button>
+          <button id="reset-view" type="button" disabled>⌖ {{ t.reset_view }}</button>
+          <label for="speed">{{ t.speed }}</label>
+          <select id="speed" disabled><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select>
+        </div>
+        <p id="keyboard-hint" class="keyboard-hint">{{ t.keys }}</p>
+      </section>
+      <section class="model-note">
+        <p class="model-note-index">METHOD / 02</p>
+        <h2>{{ t.note_title }}</h2>
+        <p>{{ t.note }}</p>
+        <p class="asset-credits">{{ t.credits }}</p>
+        <div class="source-links">
+          <a href="https://sketchfab.com/3d-models/doom-e1m1-hangar-map-2148fb6a3fe7454b901fcea67d70b318">{{ t.map_credit }} ↗</a>
+          <a href="https://sketchfab.com/3d-models/doom-eternal-slayer-toy-5f7c26b0e19f4010a2edf43bd670a433">{{ t.helmet_credit }} ↗</a>
+          <a href="https://creativecommons.org/licenses/by/4.0/">{{ t.license }} ↗</a>
+          <a href="https://threejs.org/">Three.js ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="lab-footer">
+      <span>INDEPENDENT ENGINEERING WORKSHOP</span>
+      <span>IDEAS CODE DUCKS FREEDOM</span>
+      <span>© 2026 MAD DUCK</span>
+    </footer>
+
+    <script id="experiment-copy" type="application/json">{{ t | jsonify }}</script>
+    <script type="importmap">{"imports":{"three":"{{ '/assets/experiments/doom-drodrosophila/lib/three.module.js' | relative_url }}"}}</script>
+    <script type="module" src="{{ '/assets/experiments/doom-drodrosophila/boot.js' | relative_url }}"></script>
+  </body>
+</html>
