@@ -12,12 +12,57 @@ async (page) => {
   const base = 'http://127.0.0.1:4174';
   try {
     await tab.emulateMedia({ reducedMotion: 'reduce' });
+    await tab.addInitScript(() => {
+      // Hold rendering after asset initialization to inspect the loading boundary.
+      const request = window.requestAnimationFrame.bind(window);
+      const cancel = window.cancelAnimationFrame.bind(window);
+      const pending = new Map();
+      let open = false,
+        nextId = -1;
+      window.requestAnimationFrame = (callback) => {
+        if (open) return request(callback);
+        const id = nextId--;
+        pending.set(id, callback);
+        return id;
+      };
+      window.cancelAnimationFrame = (id) => {
+        if (!pending.delete(id)) cancel(id);
+      };
+      window.releaseFirstFrame = () => {
+        open = true;
+        for (const callback of pending.values()) request(callback);
+        pending.clear();
+      };
+    });
     for (const [path, language, title] of [
       ['/experiments/doom-drodrosophila/', 'ru', 'МУХА В DOOM'],
       ['/en/experiments/doom-drodrosophila/', 'en', 'A FLY IN DOOM'],
     ]) {
       await tab.goto(`${base}${path}?debug`);
-      await tab.waitForFunction(() => window.flyLab);
+      await tab.waitForFunction(() => window.flyLab, null, { polling: 20 });
+      check(
+        await tab.evaluate(
+          () =>
+            !document.querySelector('#lab-loading').hidden &&
+            window.flyLab.snapshot().resources.drawCalls === 0 &&
+            [...document.querySelectorAll('.transport button, .transport select')].every(
+              (el) => el.disabled,
+            ),
+        ),
+        `${language}: loader stays visible before the first frame`,
+      );
+      await tab.evaluate(() => window.releaseFirstFrame());
+      await tab.waitForFunction(() => window.flyLab.snapshot().resources.drawCalls > 0);
+      check(
+        await tab.evaluate(
+          () =>
+            document.querySelector('#lab-loading').hidden &&
+            [...document.querySelectorAll('.transport button, .transport select')].every(
+              (el) => !el.disabled,
+            ),
+        ),
+        `${language}: first rendered frame dismisses the loader and enables controls`,
+      );
       check((await tab.locator('h1').textContent()) === title, `${language}: localized title`);
       check((await tab.locator('html').getAttribute('lang')) === language, `${language}: language`);
       const alternate =

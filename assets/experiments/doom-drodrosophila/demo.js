@@ -24,6 +24,7 @@ const motion = matchMedia('(prefers-reduced-motion: reduce)');
 let playing = !motion.matches,
   speed = 1,
   ready = false,
+  firstFrameRendered = false,
   failed = false;
 let frame,
   accumulator = 0,
@@ -180,8 +181,19 @@ function tick(time) {
   cameraRig.update(fly.root.position, dt, motion.matches);
   resize(renderer, cameraRig.camera);
   resize(brainRenderer, brain.camera);
-  renderer.render(scene, cameraRig.camera);
-  brainRenderer.render(brain.scene, brain.camera);
+  try {
+    renderer.render(scene, cameraRig.camera);
+    brainRenderer.render(brain.scene, brain.camera);
+  } catch (error) {
+    fail(error);
+    return;
+  }
+  if (failed) return;
+  if (!firstFrameRendered) {
+    firstFrameRendered = true;
+    $('lab-loading').hidden = true;
+    for (const control of controls) control.disabled = false;
+  }
   status();
 }
 try {
@@ -205,8 +217,6 @@ try {
   brain = createBrain();
   cameraRig = createCamera($('fly-canvas'), environment);
   ready = true;
-  $('lab-loading').hidden = true;
-  for (const control of controls) control.disabled = false;
   status(true);
   previousTime = performance.now();
   frame = requestAnimationFrame(tick);
