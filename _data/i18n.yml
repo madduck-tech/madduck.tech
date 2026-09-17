@@ -31,6 +31,59 @@ ru:
   original_language: Read in English
   footer_note: Делаем инструменты, которых нам не хватало.<br>Открыто. С характером.
   footer_image_alt: Утка на скале с жёлтым шарфом
+  fly_brain:
+    eyebrow: INTERACTIVE EXPLAINER / 01
+    title: СИГНАЛ ВНУТРИ МУХИ
+    description: Учебная сцена показывает, как стимул проходит от сенсорных нейронов к памяти и движению. Это не симуляция живого мозга.
+    back: На madduck.tech
+    language: EN
+    run: Запустить
+    pause: Пауза
+    replay: Сначала
+    timeline: Время эксперимента
+    stage_label: ТЕЛО / СРЕДА
+    brain_label: ЦНС / АКТИВНОСТЬ
+    model_label: МОДЕЛЬ
+    model_value: MaleCNS / иллюстративная динамика
+    state_label: СОСТОЯНИЕ
+    state_ready: Готово
+    active_label: АКТИВНЫЙ КОНТУР
+    active_none: Нет сигнала
+    loading: Собираем нервную систему…
+    webgl_error: Для этой сцены нужен браузер с WebGL.
+    drag_hint: Потяните, чтобы повернуть
+    keyboard_hint: Пробел — пауза · ← → — перемотка
+    scenarios_label: Выберите эксперимент
+    scenarios:
+      learning:
+        tab: ОБУЧЕНИЕ
+        title: Запах + подкрепление
+        description: Запах активирует сенсорный путь. Дофаминовый сигнал отмечает результат, и выбранная связь памяти постепенно усиливается.
+      vision:
+        tab: ЗРЕНИЕ
+        title: Поворот к свету
+        description: Яркая цель проходит через поле зрения. Активность движется от фоторецепторов к зрительным и нисходящим нейронам.
+      escape:
+        tab: ИСПУГ
+        title: Реакция на угрозу
+        description: Быстро растущая тень вызывает короткую сенсорную вспышку и запускает движение от опасности.
+    steps:
+      observe: Стимул
+      encode: Сенсорный вход
+      integrate: Обработка
+      reinforce: Подкрепление
+      act: Действие
+    regions:
+      sensory: Сенсорные нейроны
+      visual: Зрительный контур
+      memory: Грибовидное тело
+      dopamine: Дофаминовые нейроны
+      motor: Нисходящие нейроны
+    note_title: Что здесь настоящее
+    note_body: Геометрия вдохновлена открытыми моделями Drosophila, а названия контуров — данными MaleCNS. Динамика, выбор клеток и движения упрощены для объяснения принципа.
+    source_data: MaleCNS data
+    source_body: NeuroMechFly body
+    source_engine: Three.js
 en:
   skip: Skip to content
   nav_label: Primary navigation
@@ -64,3 +117,56 @@ en:
   original_language: Читать по-русски
   footer_note: We make the tools we were missing.<br>Openly. With character.
   footer_image_alt: A duck on a rock wearing a yellow scarf
+  fly_brain:
+    eyebrow: INTERACTIVE EXPLAINER / 01
+    title: A SIGNAL INSIDE A FLY
+    description: This teaching scene follows a stimulus from sensory neurons to memory and movement. It is not a simulation of a living brain.
+    back: Back to madduck.tech
+    language: RU
+    run: Run
+    pause: Pause
+    replay: Replay
+    timeline: Experiment timeline
+    stage_label: BODY / ARENA
+    brain_label: CNS / ACTIVITY
+    model_label: MODEL
+    model_value: MaleCNS / illustrative dynamics
+    state_label: STATE
+    state_ready: Ready
+    active_label: ACTIVE CIRCUIT
+    active_none: No signal
+    loading: Assembling the nervous system…
+    webgl_error: This scene needs a browser with WebGL support.
+    drag_hint: Drag to rotate
+    keyboard_hint: Space — pause · ← → — scrub
+    scenarios_label: Choose an experiment
+    scenarios:
+      learning:
+        tab: LEARNING
+        title: Odor + reinforcement
+        description: An odor activates a sensory pathway. A dopamine signal marks the outcome, gradually strengthening a selected memory connection.
+      vision:
+        tab: VISION
+        title: Turning toward light
+        description: A bright target crosses the visual field. Activity travels from photoreceptors to visual and descending neurons.
+      escape:
+        tab: STARTLE
+        title: Threat response
+        description: A rapidly expanding shadow triggers a brief sensory burst and starts movement away from danger.
+    steps:
+      observe: Stimulus
+      encode: Sensory input
+      integrate: Integration
+      reinforce: Reinforcement
+      act: Action
+    regions:
+      sensory: Sensory neurons
+      visual: Visual circuit
+      memory: Mushroom body
+      dopamine: Dopamine neurons
+      motor: Descending neurons
+    note_title: What is real here
+    note_body: The geometry is inspired by open Drosophila models and the circuit names come from MaleCNS data. Dynamics, cell selection, and movement are simplified for explanation.
+    source_data: MaleCNS data
+    source_body: NeuroMechFly body
+    source_engine: Three.js
