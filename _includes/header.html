@@ -9,7 +9,7 @@
     <a href="#about">{{ t.nav_about }}</a>
     <a class="nav-telegram" href="https://t.me/madducktech">TELEGRAM @MADDUCKTECH ↗</a>
     <a class="nav-github" href="https://github.com/madduck-tech">GITHUB ↗</a>
-    <a class="language-switch" href="{{ page.alternate_url | relative_url }}" lang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}" hreflang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}" aria-label="{{ t.language_label }}">{{ t.language_short }}</a>
+    <a class="language-switch" data-language-switch href="{{ page.alternate_url | relative_url }}" lang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}" hreflang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}" aria-label="{{ t.language_label }}">{{ t.language_short }}</a>
   </nav>
   <button class="menu" id="menu" type="button" aria-label="{{ t.menu_open }}" aria-controls="site-nav" aria-expanded="false" data-open-label="{{ t.menu_open }}" data-close-label="{{ t.menu_close }}">MENU</button>
 </header>

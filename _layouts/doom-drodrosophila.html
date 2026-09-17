@@ -17,6 +17,7 @@
     <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url | absolute_url }}">
     <link rel="alternate" hreflang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}" href="{{ page.alternate_url | absolute_url }}">
     <link rel="alternate" hreflang="x-default" href="{{ '/experiments/doom-drodrosophila/' | absolute_url }}">
+    {% include language-preference.html %}
     <link rel="icon" href="{{ '/assets/images/md-logo-512.png' | relative_url }}" type="image/png" sizes="512x512">
     <link rel="stylesheet" href="{{ '/assets/experiments/doom-drodrosophila/demo.css' | relative_url }}">
     <title>{{ page.title }}</title>
@@ -29,7 +30,7 @@
         <span>MAD DUCK / LAB</span>
       </a>
       <div class="lab-header-actions">
-        <a class="lab-language" href="{{ page.alternate_url | relative_url }}" lang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}">{{ t.language }}</a>
+        <a class="lab-language" data-language-switch href="{{ page.alternate_url | relative_url }}" lang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}">{{ t.language }}</a>
         <a class="lab-back" href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">← {{ t.back }}</a>
       </div>
     </header>
@@ -81,6 +82,7 @@
         <p>{{ t.note }}</p>
         <p class="asset-credits">{{ t.credits }}</p>
         <div class="source-links">
+          <a href="{% if page.lang == 'en' %}{{ '/en/blog/doom-drodrosophila/' | relative_url }}{% else %}{{ '/blog/doom-drodrosophila/' | relative_url }}{% endif %}">{{ t.preview }}</a>
           <a href="https://sketchfab.com/3d-models/doom-e1m1-hangar-map-2148fb6a3fe7454b901fcea67d70b318">{{ t.map_credit }} ↗</a>
           <a href="https://sketchfab.com/3d-models/doom-eternal-slayer-toy-5f7c26b0e19f4010a2edf43bd670a433">{{ t.helmet_credit }} ↗</a>
           <a href="https://creativecommons.org/licenses/by/4.0/">{{ t.license }} ↗</a>

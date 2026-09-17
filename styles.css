@@ -78,6 +78,17 @@ a { color: inherit; }
 .note h3 a:hover { text-decoration: underline; text-underline-offset: 5px; }
 .note p { min-height: 42px; margin: 0 0 26px; font-size: 14px; line-height: 1.45; }
 
+.experiments-strip { padding-bottom: 34px; }
+.experiments-row { display: grid; grid-template-columns: 180px minmax(0, 1fr) auto; gap: 28px; align-items: center; padding-top: 24px; border-top: 1px solid var(--line); }
+.experiments-row h2 { margin: 0; font: 700 12px var(--mono); letter-spacing: .06em; }
+.experiment-link { display: flex; gap: 24px; justify-content: space-between; align-items: center; min-height: 64px; padding-block: 8px; text-decoration: none; }
+.experiment-copy { display: grid; gap: 8px; }
+.experiment-copy strong { font-family: var(--display); font-size: 28px; line-height: 1.1; }
+.experiment-copy > span { font-size: 14px; line-height: 1.5; }
+.experiment-arrow { font: 26px var(--mono); }
+.experiment-index { color: var(--muted); font: 11px var(--mono); }
+.experiment-link:hover strong, .experiment-link:focus-visible strong { text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 3px; text-underline-offset: 5px; }
+
 .site-footer { position: relative; display: grid; grid-template-columns: 220px 1fr 1.2fr 120px; gap: 44px; min-height: 330px; align-items: center; padding-top: 35px; padding-bottom: 54px; border-top: 1px solid #ddd; }
 .footer-manifesto { position: relative; font-family: "Comic Sans MS", cursive; font-size: 34px; line-height: .95; transform: rotate(-7deg); }
 .yellow-stroke { display: block; width: 90px; height: 8px; margin: 18px 0 0 25px; background: var(--yellow); transform: rotate(-10deg); }
@@ -157,7 +168,7 @@ a { color: inherit; }
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .hero-copy { padding-top: 62px; }
   .hero-art { min-height: 500px; margin-top: 30px; }
-  .taxonomy { white-space: normal; }
+  .taxonomy { white-space: normal; overflow-wrap: anywhere; }
   .project-grid { grid-template-columns: 1fr; }
   .notes-grid { gap: 24px; }
   .site-footer { grid-template-columns: 180px 1fr 1fr; }
@@ -191,6 +202,9 @@ a { color: inherit; }
   .project-card h3 { font-size: 42px; }
   .notes-grid { grid-template-columns: 1fr; gap: 42px; }
   .section-head h2 { font-size: 38px; }
+  .experiments-row { grid-template-columns: minmax(0, 1fr) auto; gap: 14px; }
+  .experiment-link { grid-column: 1 / -1; grid-row: 2; }
+  .experiment-index { grid-column: 2; grid-row: 1; }
   .site-footer { grid-template-columns: 1fr; gap: 30px; padding-right: 20px; padding-left: 20px; }
   .footer-manifesto { font-size: 29px; }
   .footer-art { height: 230px; }

@@ -25,7 +25,7 @@ layout: default
         <a class="button button-dark" href="https://github.com/madduck-tech/gopnik" rel="noreferrer">{{ t.article_project_action }} <span aria-hidden="true">↗</span></a>
       </div>
       {% endif %}
-      <a class="translation-link" href="{{ page.alternate_url | relative_url }}" lang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}">{{ t.original_language }} <span aria-hidden="true">→</span></a>
+      <a class="translation-link" data-language-switch href="{{ page.alternate_url | relative_url }}" lang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}">{{ t.original_language }} <span aria-hidden="true">→</span></a>
     </aside>
   </div>
 </article>

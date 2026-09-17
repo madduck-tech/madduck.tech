@@ -72,3 +72,14 @@ layout: default
     {% endfor %}
   </div>
 </section>
+
+<section class="experiments-strip section-pad" id="experiments" aria-labelledby="experiments-title">
+  <div class="experiments-row">
+    <h2 id="experiments-title">{{ t.experiments_title }}</h2>
+    <a class="experiment-link" href="{% if page.lang == 'en' %}{{ '/en/experiments/doom-drodrosophila/' | relative_url }}{% else %}{{ '/experiments/doom-drodrosophila/' | relative_url }}{% endif %}">
+      <span class="experiment-copy"><strong>{{ t.experiment_fly_title }}</strong><span>{{ t.experiment_fly_description }}</span></span>
+      <span class="experiment-arrow" aria-hidden="true">→</span>
+    </a>
+    <span class="experiment-index">LAB / 02</span>
+  </div>
+</section>

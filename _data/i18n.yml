@@ -26,6 +26,9 @@ ru:
   all_notes: ВСЕ ЗАМЕТКИ
   read_article: ЧИТАТЬ
   empty_blog: Скоро здесь появятся новые материалы.
+  experiments_title: ЭКСПЕРИМЕНТЫ
+  experiment_fly_title: Муха в DOOM
+  experiment_fly_description: Дрозофила исследует E1M1. Мы наблюдаем.
   back_to_blog: Назад к заметкам
   article_project_action: Открыть Gopnik
   original_language: Read in English
@@ -36,6 +39,7 @@ ru:
     title: МУХА В DOOM
     description: Несчастный мозг дрозофилы оказался в DOOM и теперь обречён бесконечно исследовать E1M1. Виртуальная муха получает управляющие сигналы от алгоритма, а схема мозга справа показывает их условную визуализацию.
     back: На madduck.tech
+    preview: Читать тизер →
     language: EN
     run: Запустить
     pause: Пауза
@@ -101,6 +105,9 @@ en:
   all_notes: ALL NOTES
   read_article: READ
   empty_blog: More notes are on the way.
+  experiments_title: EXPERIMENTS
+  experiment_fly_title: A fly in DOOM
+  experiment_fly_description: A fruit fly explores E1M1. We watch.
   back_to_blog: Back to notes
   article_project_action: View Gopnik
   original_language: Читать по-русски
@@ -111,6 +118,7 @@ en:
     title: A FLY IN DOOM
     description: A poor fruit fly’s brain is trapped in DOOM, condemned to explore E1M1 forever. The virtual fly receives control signals from an algorithm; the brain diagram on the right is a symbolic visualization of those signals.
     back: Back to madduck.tech
+    preview: Read the preview →
     language: RU
     run: Run
     pause: Pause
