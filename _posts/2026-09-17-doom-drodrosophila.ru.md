@@ -23,7 +23,7 @@ image_alt: 'Муха с двустволкой на груде черепов, �
 За этой версией маленького призрака стоит алгоритм: он выбирает цель и подаёт сигналы движения, а схема виртуального «мозга» показывает их активность. Настоящий коннектом здесь не используется — это наша игровая зарисовка на тему цифровой мухи.
 
 <figure class="article-figure">
-  <img src="{{ '/assets/images/doom-drodrosophila-screenshot.webp' | relative_url }}" alt="Муха в шлеме Doomguy идёт по E1M1; справа отображаются схема мозга и сигналы движения, внизу — управление экспериментом" width="874" height="1546" loading="lazy" style="height: auto;">
+  <img src="{{ '/assets/images/doom-drodrosophila-screenshot.webp' | relative_url }}" alt="Муха в шлеме Doomguy идёт по коридору E1M1; в правом верхнем углу — схема виртуального мозга и индикаторы управляющих сигналов" width="1448" height="1814" loading="lazy" style="height: auto;">
   <figcaption>Крошечные лапки идут к цели. Выход пока не найден.</figcaption>
 </figure>
 

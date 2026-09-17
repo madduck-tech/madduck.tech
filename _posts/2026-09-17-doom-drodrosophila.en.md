@@ -23,7 +23,7 @@ In our little story, its poor brain is trapped on E1M1, trying to find a way out
 An algorithm runs this version of the little ghost: it picks a destination and sends movement signals, while the virtual “brain” diagram displays their activity. There is no actual connectome here — this is our playful take on the digital fly.
 
 <figure class="article-figure">
-  <img src="{{ '/assets/images/doom-drodrosophila-screenshot.webp' | relative_url }}" alt="A fly in a Doomguy helmet walks through E1M1, with a brain diagram and movement signals on the right and experiment controls in Russian below" width="874" height="1546" loading="lazy" style="height: auto;">
+  <img src="{{ '/assets/images/doom-drodrosophila-screenshot.webp' | relative_url }}" alt="A fly in a Doomguy helmet walks through an E1M1 corridor, with a virtual brain diagram and control signal indicators labelled in Russian in the upper right" width="1448" height="1814" loading="lazy" style="height: auto;">
   <figcaption>Tiny legs heading for the next destination. Still no exit in sight.</figcaption>
 </figure>
 
