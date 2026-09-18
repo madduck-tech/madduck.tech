@@ -1,34 +1,22 @@
 (() => {
-  // The old key mixed automatic detection with explicit choices and cannot be migrated reliably.
   const storageKey = 'madduck.language.v2';
   const currentLanguage = document.documentElement.lang;
   const alternateUrl = document.currentScript.dataset.alternateUrl;
   const supported = (language) => language === 'ru' || language === 'en';
   if (!supported(currentLanguage)) return;
 
-  let preferredLanguage;
+  let manualLanguage;
   try {
-    const saved = localStorage.getItem(storageKey);
-    let preference;
-    try {
-      preference = JSON.parse(saved);
-    } catch {
-      // Ignore malformed preferences and detect the browser language again.
+    const preference = JSON.parse(localStorage.getItem(storageKey));
+    if (preference?.source === 'manual' && supported(preference.language)) {
+      manualLanguage = preference.language;
     }
-    const manual = preference?.source === 'manual' && supported(preference.language);
-    const browserLanguages = [...(navigator.languages || []), navigator.language];
-    preferredLanguage = manual ? preference.language
-      : browserLanguages.some((language) => /^ru(?:-|$)/i.test(language)) ? 'ru' : 'en';
-    // Only redirect when the choice can persist, so blocked storage cannot trap a language switch.
-    localStorage.setItem(storageKey, JSON.stringify({
-      language: preferredLanguage,
-      source: manual ? 'manual' : 'browser',
-    }));
   } catch {
-    return;
+    // A missing, malformed, or unavailable preference must not change the URL.
   }
 
-  if (preferredLanguage !== currentLanguage && alternateUrl) {
+  // Keep every localized URL crawlable. Only redirect after an explicit user choice.
+  if (manualLanguage && manualLanguage !== currentLanguage && alternateUrl) {
     const destination = new URL(alternateUrl, location.href);
     if (destination.origin === location.origin && destination.pathname !== location.pathname) {
       destination.search = location.search;
