@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" height="900" role="img" viewBox="0 0 1200 900" width="1200">
+  <title id="title">Блок-схема управления движением</title>
+  <desc id="desc">Карта и позиция ведут к выбору цели и BFS, затем к контроллеру, движению и новой позиции. Новая позиция возвращается к карте. Контроллер отдельно передаёт сигналы визуализации мозга; обратной управляющей связи от неё нет.</desc>
+  <defs>
+    <marker id="arrow-black" markerHeight="12" markerUnits="userSpaceOnUse" markerWidth="12" orient="auto" refX="10" refY="6">
+      <path d="M 1 1 L 10 6 L 1 11" fill="none" stroke="#111111" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2"/>
+    </marker>
+    <marker id="arrow-yellow" markerHeight="12" markerUnits="userSpaceOnUse" markerWidth="12" orient="auto" refX="10" refY="6">
+      <path d="M 1 1 L 10 6 L 1 11" fill="none" stroke="#FFD400" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2"/>
+    </marker>
+  </defs>
+  <rect fill="#F4F2EC" height="900" width="1200"/>
+  <g fill="#111111">
+    <rect height="84" width="450" x="280" y="65"/>
+    <rect height="84" width="450" x="280" y="205"/>
+    <rect height="84" width="450" x="280" y="345"/>
+    <rect height="84" width="450" x="280" y="485"/>
+    <rect height="84" width="450" x="280" y="625"/>
+    <rect height="84" width="335" x="810" y="345"/>
+  </g>
+  <g dominant-baseline="middle" fill="#F4F2EC" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" letter-spacing="0.3" text-anchor="middle">
+    <text x="505" y="107">Карта + позиция</text>
+    <text x="505" y="247">Выбор цели + BFS</text>
+    <text x="505" y="387">Контроллер</text>
+    <text font-size="27" x="505" y="527">Поворот / ходьба / остановка</text>
+    <text x="505" y="667">Новая позиция</text>
+    <text font-size="25" x="977.5" y="387">Визуализация мозга</text>
+  </g>
+  <g fill="none" stroke="#111111" stroke-linecap="square" stroke-linejoin="miter" stroke-width="4">
+    <path d="M 505 149 V 192" marker-end="url(#arrow-black)"/>
+    <path d="M 505 289 V 332" marker-end="url(#arrow-black)"/>
+    <path d="M 505 569 V 612" marker-end="url(#arrow-black)"/>
+    <path d="M 280 667 H 145 V 107 H 267" marker-end="url(#arrow-black)"/>
+    <path d="M 730 387 H 797" marker-end="url(#arrow-black)"/>
+  </g>
+  <path d="M 505 429 V 472" fill="none" marker-end="url(#arrow-yellow)" stroke="#FFD400" stroke-linecap="square" stroke-width="5"/>
+  <text fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" letter-spacing="0.3" text-anchor="middle" x="600" y="829">Коннектом в демо не используется</text>
+</svg>

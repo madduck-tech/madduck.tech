@@ -31,6 +31,6 @@ Still, watching it feels a little unsettling. It seems doomed to wander this bas
 
 Not quite how I pictured immortality. Brr.
 
-For now, you can watch the fly wander back and forth. A more detailed article about how it all works will follow later. Until then — enjoy.
+You can watch the fly wander back and forth. If you want to know who picks the route and what its virtual brain displays, [the follow-up explaining how it works]({{ '/en/blog/doom-fly-inside/' | relative_url }}) is now ready. Enjoy.
 
 <a class="inline-cta" href="{{ '/en/experiments/doom-drodrosophila/' | relative_url }}">WATCH THE FLY →</a>

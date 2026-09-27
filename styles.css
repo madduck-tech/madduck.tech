@@ -129,6 +129,9 @@ a { color: inherit; }
 .article-content code { padding: .1em .28em; background: #dddcd7; font: .86em var(--mono); }
 .article-content pre { max-width: 100%; margin: 34px 0; overflow-x: auto; padding: 28px; border-left: 5px solid var(--yellow); color: var(--paper); background: var(--ink); font: 14px/1.65 var(--mono); }
 .article-content pre code { padding: 0; color: inherit; background: none; font: inherit; }
+.article-technical-details { margin: 36px 0; border-block: 1px solid var(--line); }
+.article-technical-details > summary { padding: 16px 0; cursor: pointer; font: 700 15px/1.5 var(--mono); }
+.article-technical-details[open] > summary { margin-bottom: 24px; }
 .article-content blockquote { margin: 36px 0; padding: 25px 28px; border-block: 1px solid var(--line); background: #e6e5df; font: 1.15em/1.55 var(--mono); }
 .article-content blockquote p:last-of-type { margin-bottom: 12px; }
 .article-content cite, .article-figure figcaption { color: var(--muted); font: 13px/1.55 var(--mono); font-style: normal; }
@@ -148,6 +151,8 @@ a { color: inherit; }
 .article-figure { margin: 42px 0; }
 .article-figure img { border: 1px solid var(--line); }
 .article-figure figcaption { margin-top: 11px; }
+.article-diagram img { height: auto; }
+.article-figure-source { display: flex; align-items: center; width: fit-content; min-height: 44px; }
 .article-sources { margin-top: 60px; padding-top: 5px; border-top: 1px solid var(--line); font: 14px/1.6 var(--mono); }
 .inline-cta { display: inline-flex; padding: 12px 16px; border: 1px solid var(--line); font: 700 14px var(--mono); text-decoration: none; }
 .inline-cta:hover { color: var(--paper); background: var(--ink); }

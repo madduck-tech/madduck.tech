@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans, Arial, Helvetica, sans-serif" height="900" viewBox="0 0 1200 900" width="1200">
+<rect fill="#F4F2EC" height="900" width="1200" />
+<defs>
+    <marker id="h" markerHeight="9" markerUnits="userSpaceOnUse" markerWidth="9" orient="auto" refX="9" refY="5" viewBox="0 0 10 10">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#000" />
+    </marker>
+    <marker id="hs" markerHeight="18" markerUnits="userSpaceOnUse" markerWidth="18" orient="auto" refX="10" refY="5" viewBox="0 0 10 10">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#000" />
+    </marker>
+  </defs>
+<text fill="#000" font-size="30" font-weight="700" x="60" y="72">MAD DUCK</text>
+<text fill="#000" font-size="24" text-anchor="end" x="1140" y="72">From tissue to model</text>
+<line stroke="#000" stroke-width="2" x1="60" x2="1140" y1="90" y2="90" />
+<rect fill="none" height="200" stroke="#000" stroke-width="2" width="1080" x="60" y="110" />
+<line stroke="#000" stroke-width="2" x1="420" x2="420" y1="110" y2="310" />
+<rect fill="#000" height="56" width="56" x="90" y="140" />
+<text fill="#F4F2EC" font-size="34" font-weight="700" text-anchor="middle" x="118" y="181">1</text>
+<text fill="#000" font-size="38" font-weight="700" x="166" y="181">Tissue</text>
+<text fill="#000" font-size="23" x="90" y="240">Schematic layers of</text>
+<text fill="#000" font-size="23" x="90" y="270">microscope</text>
+<text fill="#000" font-size="23" x="90" y="300">images</text>
+<rect fill="none" height="200" stroke="#000" stroke-width="2" width="1080" x="60" y="350" />
+<line stroke="#000" stroke-width="2" x1="420" x2="420" y1="350" y2="550" />
+<rect fill="#000" height="56" width="56" x="90" y="380" />
+<text fill="#F4F2EC" font-size="34" font-weight="700" text-anchor="middle" x="118" y="421">2</text>
+<text fill="#000" font-size="38" font-weight="700" x="166" y="421">Connectome</text>
+<text fill="#000" font-size="23" x="90" y="480">A few neurons</text>
+<text fill="#000" font-size="23" x="90" y="510">and their connections</text>
+<rect fill="none" height="240" stroke="#000" stroke-width="2" width="1080" x="60" y="590" />
+<line stroke="#000" stroke-width="2" x1="420" x2="420" y1="590" y2="830" />
+<rect fill="#000" height="56" width="56" x="90" y="620" />
+<text fill="#F4F2EC" font-size="34" font-weight="700" text-anchor="middle" x="118" y="661">3</text>
+<text fill="#000" font-size="38" font-weight="700" x="166" y="661">Model</text>
+<text fill="#000" font-size="23" x="90" y="720">The same network</text>
+<text fill="#000" font-size="23" x="90" y="750">with rules for</text>
+<text fill="#000" font-size="23" x="90" y="780">signal propagation</text>
+<line marker-end="url(#hs)" stroke="#000" stroke-width="3" x1="780" x2="780" y1="314" y2="346" />
+<line marker-end="url(#hs)" stroke="#000" stroke-width="3" x1="780" x2="780" y1="554" y2="586" />
+<polygon fill="#F4F2EC" points="655.0,135 975.0,135 905.0,195 585.0,195" stroke="#000" stroke-width="2" />
+<polygon fill="#F4F2EC" points="655.0,165 975.0,165 905.0,225 585.0,225" stroke="#000" stroke-width="2" />
+<polygon fill="#F4F2EC" points="655.0,195 975.0,195 905.0,255 585.0,255" stroke="#000" stroke-width="2" />
+<polygon fill="#F4F2EC" points="655.0,225 975.0,225 905.0,285 585.0,285" stroke="#000" stroke-width="2" />
+<circle cx="660" cy="243" fill="none" r="9" stroke="#000" stroke-width="2" />
+<circle cx="705" cy="262" fill="none" r="7" stroke="#000" stroke-width="2" />
+<circle cx="750" cy="240" fill="none" r="8" stroke="#000" stroke-width="2" />
+<circle cx="800" cy="258" fill="none" r="10" stroke="#000" stroke-width="2" />
+<circle cx="850" cy="242" fill="none" r="7" stroke="#000" stroke-width="2" />
+<circle cx="890" cy="262" fill="none" r="8" stroke="#000" stroke-width="2" />
+<circle cx="740" cy="270" fill="none" r="6" stroke="#000" stroke-width="2" />
+<circle cx="830" cy="272" fill="none" r="6" stroke="#000" stroke-width="2" />
+<line stroke="#000" stroke-width="2.5" x1="567.8" x2="677.2" y1="443.3" y2="401.7" />
+<line stroke="#000" stroke-width="2.5" x1="567.8" x2="677.2" y1="456.7" y2="498.3" />
+<line stroke="#000" stroke-width="2.5" x1="714.0" x2="826.0" y1="395.0" y2="395.0" />
+<line stroke="#000" stroke-width="2.5" x1="710.3" x2="829.7" y1="406.2" y2="493.8" />
+<line stroke="#000" stroke-width="2.5" x1="714.0" x2="826.0" y1="505.0" y2="505.0" />
+<line stroke="#000" stroke-width="2.5" x1="710.3" x2="829.7" y1="493.8" y2="406.2" />
+<line stroke="#000" stroke-width="2.5" x1="862.8" x2="972.2" y1="401.7" y2="443.3" />
+<line stroke="#000" stroke-width="2.5" x1="862.8" x2="972.2" y1="498.3" y2="456.7" />
+<circle cx="550" cy="450" fill="#F4F2EC" r="17" stroke="#000" stroke-width="3" />
+<circle cx="695" cy="395" fill="#F4F2EC" r="17" stroke="#000" stroke-width="3" />
+<circle cx="695" cy="505" fill="#F4F2EC" r="17" stroke="#000" stroke-width="3" />
+<circle cx="845" cy="395" fill="#F4F2EC" r="17" stroke="#000" stroke-width="3" />
+<circle cx="845" cy="505" fill="#F4F2EC" r="17" stroke="#000" stroke-width="3" />
+<circle cx="990" cy="450" fill="#F4F2EC" r="17" stroke="#000" stroke-width="3" />
+<line marker-end="url(#h)" stroke="#000" stroke-width="2.5" x1="567.8" x2="675.4" y1="678.3" y2="637.4" />
+<line marker-end="url(#h)" stroke="#000" stroke-width="2.5" x1="567.8" x2="675.4" y1="691.7" y2="732.6" />
+<line marker-end="url(#h)" stroke="#000" stroke-width="2.5" x1="714.0" x2="824.0" y1="630.0" y2="630.0" />
+<line marker-end="url(#h)" stroke="#000" stroke-width="2.5" x1="710.3" x2="828.1" y1="641.2" y2="727.6" />
+<line marker-end="url(#h)" stroke="#000" stroke-width="2.5" x1="714.0" x2="824.0" y1="740.0" y2="740.0" />
+<line marker-end="url(#h)" stroke="#000" stroke-width="2.5" x1="710.3" x2="828.1" y1="728.8" y2="642.4" />
+<line marker-end="url(#h)" stroke="#000" stroke-width="2.5" x1="862.8" x2="970.4" y1="636.7" y2="677.6" />
+<line marker-end="url(#h)" stroke="#000" stroke-width="2.5" x1="862.8" x2="970.4" y1="733.3" y2="692.4" />
+<circle cx="550" cy="685" fill="#F4F2EC" r="17" stroke="#000" stroke-width="3" />
+<circle cx="695" cy="630" fill="#F4F2EC" r="17" stroke="#000" stroke-width="3" />
+<circle cx="695" cy="740" fill="#F4F2EC" r="17" stroke="#000" stroke-width="3" />
+<circle cx="845" cy="630" fill="#F4F2EC" r="17" stroke="#000" stroke-width="3" />
+<circle cx="845" cy="740" fill="#F4F2EC" r="17" stroke="#000" stroke-width="3" />
+<circle cx="990" cy="685" fill="#F4F2EC" r="17" stroke="#000" stroke-width="3" />
+<polygon fill="#FFD400" points="450,676 507,676 507,665 529,685 507,705 507,694 450,694" stroke="#000" stroke-width="2" />
+<text fill="#000" font-size="22" x="450" y="653">input</text>
+<line marker-end="url(#hs)" stroke="#000" stroke-width="3" x1="1009" x2="1110" y1="685" y2="685" />
+<text fill="#000" font-size="22" text-anchor="end" x="1110" y="653">output</text>
+<line stroke="#000" stroke-width="2" x1="420" x2="1140" y1="765" y2="765" />
+<text fill="#000" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" font-size="22" font-weight="700" text-anchor="middle" x="780" y="806">Input signal → activity calculation → output signal</text>
+<text fill="#000" font-size="22" x="60" y="872">Teaching diagram, not an anatomical reconstruction</text>
+</svg>

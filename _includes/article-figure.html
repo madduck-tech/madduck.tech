@@ -1,0 +1,7 @@
+<figure class="article-figure article-diagram">
+  <img src="{{ include.image | relative_url }}" alt="{{ include.alt | escape }}" width="{{ include.width }}" height="{{ include.height }}" loading="lazy">
+  <figcaption>
+    {{ include.caption | escape }}
+    <a class="article-figure-source" href="{{ include.image | relative_url }}">{{ site.data.i18n[page.lang].view_full_image }}</a>
+  </figcaption>
+</figure>
