@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">EVO-X2 / HOME AI LAB</title>
+  <desc id="desc">128 GB shared memory. A dashboard selects the GPU workload: local language models, image generation, or photo processing. MicroK8s manages the services.</desc>
+  <rect width="1200" height="760" fill="#F4F2EC"/>
+  <g fill="#000" font-family="Arial, Helvetica, sans-serif">
+    <text x="54" y="60" font-family="monospace" font-size="23">MAD DUCK / HOME AI LAB</text>
+    <path d="M54 84H1146" stroke="#000" stroke-width="2"/>
+    <text x="46" y="236" font-size="158" font-weight="900" letter-spacing="-8">EVO-X2</text>
+    <text x="57" y="288" font-family="monospace" font-size="24">RYZEN AI MAX+ 395 / RADEON 8060S / 128 GB</text>
+    <path d="M54 326H1146" stroke="#000" stroke-width="2"/>
+    <rect x="54" y="369" width="322" height="254" fill="#000"/>
+    <g fill="#F4F2EC">
+      <text x="78" y="418" font-family="monospace" font-size="23">CONTROL PANEL</text>
+      <text x="77" y="480" font-size="39" font-weight="bold">DASHBOARD</text>
+      <text x="80" y="528" font-family="monospace" font-size="24">PROFILES / METRICS</text>
+      <text x="80" y="566" font-family="monospace" font-size="24">POWER / WAKE</text>
+      <path d="M80 595H348" stroke="#777"/>
+    </g>
+    <g fill="none" stroke="#000" stroke-width="2">
+      <path d="M376 496H429M429 410V582M429 410H487M429 496H487M429 582H487"/>
+      <path d="M477 402L487 410L477 418M477 488L487 496L477 504M477 574L487 582L477 590"/>
+      <path d="M516 446H1146M516 532H1146M516 620H1146"/>
+    </g>
+    <text x="516" y="420" font-size="37" font-weight="bold">LLM</text>
+    <text x="726" y="418" font-family="monospace" font-size="24">LLAMA.CPP / WEB CHAT</text>
+    <text x="516" y="506" font-size="37" font-weight="bold">IMAGES</text>
+    <text x="726" y="504" font-family="monospace" font-size="24">COMFYUI / SWARMUI</text>
+    <text x="516" y="592" font-size="37" font-weight="bold">PHOTOS</text>
+    <text x="726" y="590" font-family="monospace" font-size="24">IMMICH ML</text>
+    <path d="M54 663H1146" stroke="#000" stroke-width="2"/>
+    <text x="57" y="716" font-family="monospace" font-size="23">UBUNTU + MICROK8S / ONE GPU, SWITCHABLE WORKLOADS</text>
+  </g>
+  <g transform="translate(992 137) rotate(8)">
+    <rect width="140" height="112" fill="#FFD400" stroke="#000" stroke-width="2"/>
+    <text x="70" y="48" text-anchor="middle" font-family="monospace" font-size="26" font-weight="bold">LOCAL</text>
+    <text x="70" y="84" text-anchor="middle" font-family="monospace" font-size="25">AI</text>
+  </g>
+</svg>
