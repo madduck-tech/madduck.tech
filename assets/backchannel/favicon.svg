@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+<title>Backchannel proposal A — Offset channels — app-icon tile</title>
+<style>:root{--accent:oklch(0.365 0.082 190);--accent-on:oklch(1 0 0)}</style>
+<metadata>Design proposal only. Canvas 1024×1024. Tile bounds: 80,80 to 944,944. Glyph safe-area box: 224,224 to 800,800. Safe area is a design convention, not native platform certification.</metadata>
+<g id="safe-area" display="none"><rect x="224" y="224" width="576" height="576" fill="none"/></g>
+<path d="M512 80C720 80 824 80 884 140C944 200 944 304 944 512C944 720 944 824 884 884C824 944 720 944 512 944C304 944 200 944 140 884C80 824 80 720 80 512C80 304 80 200 140 140C200 80 304 80 512 80Z" fill="var(--accent)"/>
+<g transform="translate(224 224) scale(24)" color="var(--accent-on)">
+<path d="M4.5 4.5V14.5Q4.5 18.5 8.5 18.5H10" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" data-part="channel-one"/>
+<path d="M19.5 19.5V9.5Q19.5 5.5 15.5 5.5H14" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" data-part="channel-two"/>
+<circle cx="12" cy="12" r="2" fill="currentColor" data-part="live-element"/>
+</g>
+</svg>

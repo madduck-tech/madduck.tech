@@ -79,6 +79,44 @@ ru:
       motor: Движение
       stop: Стоп
 
+  backchannel:
+    title: Backchannel — заметки со встреч на вашем компьютере
+    description: Расшифровка в реальном времени, саммари и задачи по каждому звонку. Всё работает на вашем компьютере.
+    nav_tour: Экраны
+    nav_features: Возможности
+    badge: Работает целиком на&nbsp;вашем компьютере
+    hero_title: Заметки со&nbsp;встреч, которые не&nbsp;покидают ваш ноутбук.
+    hero_lead: Расшифровка в&nbsp;реальном времени, саммари и&nbsp;задачи по&nbsp;каждому звонку. Бесплатно, Open-source, без регистрации.
+    hero_alt: Завершённая встреча — расшифровка слева, саммари с главным и задачами справа
+    cta_tour: Посмотреть экраны
+    cta_features: Возможности
+    tour_title: Четыре экрана — весь продукт.
+    tour_lead: От первой записи до саммари, которое вы отправляете команде.
+    tour_label: Экраны приложения
+    tabs:
+      - label: Запись
+        shot: live
+        caption: Текст появляется, пока человек ещё говорит. Ваши реплики справа, собеседников — слева.
+        alt: Идёт запись, последняя фраза ещё распознаётся
+      - label: Итоги
+        shot: review
+        caption: После звонка — главное и задачи, и у каждой ссылка на момент, когда это прозвучало.
+        alt: Завершённая встреча с саммари
+      - label: Модель расшифровки
+        shot: models
+        caption: Введите язык — список сузится до моделей, которые его понимают. Модель скачивается один раз и работает локально.
+        alt: Каталог моделей расшифровки, отфильтрованный по языку
+      - label: Кто пишет саммари
+        shot: providers
+        caption: По умолчанию — встроенная модель. Ollama, ваш API-ключ, Claude Code или Codex — когда захотите.
+        alt: Выбор того, кто пишет саммари
+    card_local_title: Ничего не&nbsp;загружается
+    card_local_text: Расшифровка и&nbsp;саммари по&nbsp;умолчанию делаются на&nbsp;устройстве. Облачный сервис используется, только если вы&nbsp;сами его выбрали и&nbsp;указали свой ключ.
+    card_lang_title: Ваш язык
+    card_lang_text: 96 моделей расшифровки, в&nbsp;том числе для русского. Введите язык&nbsp;— останутся те, что с&nbsp;ним работают.
+    card_free_title: Бесплатно и&nbsp;Open-source
+    card_free_text: Лицензия MIT. Без платных тарифов, ключей активации и&nbsp;телеметрии.
+    footer: Backchannel · сделано в Mad Duck
 en:
   skip: Skip to content
   nav_label: Primary navigation
@@ -159,3 +197,41 @@ en:
       turn: Turn
       motor: Move
       stop: Stop
+  backchannel:
+    title: Backchannel — meeting notes on your own computer
+    description: Live transcript, summary and action items for every call. Everything runs on your computer.
+    nav_tour: Tour
+    nav_features: Features
+    badge: Runs entirely on your computer
+    hero_title: Meeting notes that never leave your laptop.
+    hero_lead: Live transcript, summary and action items for every call. Free, open source, no sign-up.
+    hero_alt: A finished meeting — the transcript on the left, the summary with key points and action items on the right
+    cta_tour: Take the tour
+    cta_features: Features
+    tour_title: Four screens, the whole product.
+    tour_lead: From the first recording to the summary you send around.
+    tour_label: App screens
+    tabs:
+      - label: Record
+        shot: live
+        caption: Text arrives while people speak. You on the right, everyone else on the left.
+        alt: Recording, the last line still arriving
+      - label: Review
+        shot: review
+        caption: When the call ends — key points and action items, each linked to the moment it was said.
+        alt: A finished meeting with its summary
+      - label: Choose a model
+        shot: models
+        caption: Type a language and the list narrows to the models that handle it. Downloaded once, run locally.
+        alt: The transcription model catalogue filtered by language
+      - label: Choose a summariser
+        shot: providers
+        caption: The built-in model by default. Ollama, your own API key, Claude Code or Codex when you want them.
+        alt: Choosing who writes the summary
+    card_local_title: Nothing uploaded
+    card_local_text: Transcription and the summary run on the device by default. A cloud provider is used only if you pick one and give it your key.
+    card_lang_title: Your language
+    card_lang_text: 96 transcription models. Type a language and pick from the ones that handle it.
+    card_free_title: Free and open source
+    card_free_text: MIT licence. No paid tier, no licence key, no telemetry.
+    footer: Backchannel · made at Mad Duck
