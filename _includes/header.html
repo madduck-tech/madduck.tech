@@ -7,6 +7,7 @@
     <a href="{% if page.lang == 'en' %}{{ '/en/#projects' | relative_url }}{% else %}{{ '/#projects' | relative_url }}{% endif %}">{{ t.nav_projects }}</a>
     <a href="{% if page.lang == 'en' %}{{ '/en/#notes' | relative_url }}{% else %}{{ '/#notes' | relative_url }}{% endif %}">{{ t.nav_blog }}</a>
     <a href="#about">{{ t.nav_about }}</a>
+    <a class="nav-email" href="mailto:contacts@madduck.tech">{{ t.nav_email | upcase }} CONTACTS@MADDUCK.TECH</a>
     <a class="nav-telegram" href="https://t.me/madducktech">TELEGRAM @MADDUCKTECH ↗</a>
     <a class="nav-github" href="https://github.com/madduck-tech">GITHUB ↗</a>
     <a class="language-switch" data-language-switch href="{{ page.alternate_url | relative_url }}" lang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}" hreflang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}" aria-label="{{ t.language_label }}">{{ t.language_short }}</a>

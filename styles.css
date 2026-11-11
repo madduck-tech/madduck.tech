@@ -32,6 +32,7 @@ a { color: inherit; }
 .site-nav .nav-github { padding: 17px 24px; font-weight: 700; background: var(--yellow); }
 .site-nav .nav-github:hover { border-color: var(--yellow); }
 .site-nav .nav-telegram { border-bottom-color: var(--ink); padding-bottom: 4px; font-size: 11px; }
+.site-nav .nav-email { display: none; }
 .language-switch { display: grid; width: 36px; height: 36px; place-items: center; border: 1px solid var(--ink) !important; font-size: 11px; }
 .language-switch:hover { color: var(--paper); background: var(--ink); }
 .menu { display: none; border: 1px solid var(--ink); background: none; padding: 10px 12px; font: 12px var(--mono); }
@@ -94,7 +95,11 @@ a { color: inherit; }
 .yellow-stroke { display: block; width: 90px; height: 8px; margin: 18px 0 0 25px; background: var(--yellow); transform: rotate(-10deg); }
 .footer-brand p { font-size: 12px; line-height: 1.4; }
 .footer-logo { margin-bottom: 8px; }
-.socials { display: flex; gap: 18px; margin-top: 24px; font: 11px var(--mono); }
+.footer-mail { margin-top: 24px; }
+.footer-mail-label { display: block; margin-bottom: 6px; color: var(--muted); font: 10px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.footer-mail a { padding-bottom: 2px; border-bottom: 2px solid var(--ink); font: 700 16px var(--mono); text-decoration: none; overflow-wrap: anywhere; }
+.footer-mail a:hover { border-bottom-color: var(--yellow); }
+.socials { display: flex; gap: 18px; margin-top: 20px; font: 11px var(--mono); }
 .footer-art { height: 260px; overflow: hidden; align-self: end; }
 .footer-art img { width: 100%; height: 100%; object-fit: cover; object-position: center 44%; mix-blend-mode: multiply; }
 .footer-code { align-self: start; margin-top: 18px; color: #666; font: 12px/1.35 var(--mono); }
@@ -193,8 +198,9 @@ a { color: inherit; }
   .no-js .site-header { height: auto; min-height: 72px; padding-block: 18px; }
   .no-js .site-nav { position: static; grid-column: 1 / -1; }
   .no-js .menu { display: none; }
-  .site-nav .nav-github, .site-nav .nav-telegram { width: 100%; text-align: center; }
-  .site-nav .nav-telegram { padding: 13px; border: 1px solid var(--ink); }
+  .site-nav .nav-github, .site-nav .nav-telegram, .site-nav .nav-email { width: 100%; text-align: center; }
+  .site-nav .nav-telegram, .site-nav .nav-email { padding: 13px; border: 1px solid var(--ink); }
+  .site-nav .nav-email { display: block; overflow-wrap: anywhere; }
   .language-switch { width: 100%; height: auto; padding: 13px; text-align: center; }
   .hero-copy { padding-top: 38px; }
   .mobile-only { display: block; }

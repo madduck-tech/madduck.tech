@@ -76,10 +76,10 @@
 
         <section class="contact" id="contact" aria-labelledby="contact-title">
           <div><h2 id="contact-title">{{ t.contact_title }}</h2><p>{{ t.contact_text }}</p></div>
-          <div class="side"><a class="mail" href="mailto:contact@madduck.tech?subject={{ t.contact_subject | uri_escape }}">contact@madduck.tech</a><a class="btn primary" href="mailto:contact@madduck.tech?subject={{ t.contact_subject | uri_escape }}">{{ t.contact_button }}</a></div>
+          <div class="side"><a class="mail" href="mailto:contacts@madduck.tech?subject={{ t.contact_subject | uri_escape }}">contacts@madduck.tech</a><a class="btn primary" href="mailto:contacts@madduck.tech?subject={{ t.contact_subject | uri_escape }}">{{ t.contact_button }}</a></div>
         </section>
       </main>
     </div>
-    <footer><div class="wrap"><a href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{{ t.footer }}</a><a href="mailto:contact@madduck.tech">contact@madduck.tech</a></div></footer>
+    <footer><div class="wrap"><a href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{{ t.footer }}</a><a href="mailto:contacts@madduck.tech">contacts@madduck.tech</a></div></footer>
   </body>
 </html>
