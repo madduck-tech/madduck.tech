@@ -35,6 +35,7 @@
         <a class="logo" href="{{ page.url | relative_url }}"><span class="tile" aria-hidden="true"><svg><use href="#mark"/></svg></span>Backchannel</a>
         <a class="link" href="#tour">{{ t.nav_tour }}</a>
         <a class="link" href="#features">{{ t.nav_features }}</a>
+        <a class="btn primary" href="#contact">{{ t.nav_contact }}</a>
         <a class="lang" data-language-switch href="{{ page.alternate_url | relative_url }}" lang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}" hreflang="{% if page.lang == 'en' %}ru{% else %}en{% endif %}" aria-label="{{ common.language_label }}">{{ common.language_short }}</a>
       </nav>
 
@@ -44,7 +45,7 @@
             <p class="badge"><i aria-hidden="true"></i>{{ t.badge }}</p>
             <h1>{{ t.hero_title }}</h1>
             <p>{{ t.hero_lead }}</p>
-            <div class="ctas"><a class="btn primary" href="#tour">{{ t.cta_tour }}</a><a class="btn" href="#features">{{ t.cta_features }}</a></div>
+            <div class="ctas"><a class="btn primary" href="#contact">{{ t.cta_contact }}</a><a class="btn" href="#tour">{{ t.cta_tour }}</a></div>
           </div>
           <div class="win"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="{{ shots | append: 'review.png' | relative_url }}" width="2560" height="1600" alt="{{ t.hero_alt | escape }}"></div>
         </header>
@@ -70,10 +71,15 @@
         <section class="grid3" id="features" aria-label="{{ t.nav_features }}">
           <div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div><h3>{{ t.card_local_title }}</h3><p>{{ t.card_local_text }}</p></div>
           <div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h9M8.5 3v2M6 5c1 4 4 7 7 8M11 5c-1 4-4 7-7 8M13 21l4-9 4 9M14.5 18h5"/></svg></div><h3>{{ t.card_lang_title }}</h3><p>{{ t.card_lang_text }}</p></div>
-          <div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18"/></svg></div><h3>{{ t.card_free_title }}</h3><p>{{ t.card_free_text }}</p></div>
+          <div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div><h3>{{ t.card_account_title }}</h3><p>{{ t.card_account_text }}</p></div>
+        </section>
+
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+          <div><h2 id="contact-title">{{ t.contact_title }}</h2><p>{{ t.contact_text }}</p></div>
+          <div class="side"><a class="mail" href="mailto:contact@madduck.tech?subject={{ t.contact_subject | uri_escape }}">contact@madduck.tech</a><a class="btn primary" href="mailto:contact@madduck.tech?subject={{ t.contact_subject | uri_escape }}">{{ t.contact_button }}</a></div>
         </section>
       </main>
     </div>
-    <footer><div class="wrap"><a href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{{ t.footer }}</a></div></footer>
+    <footer><div class="wrap"><a href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{{ t.footer }}</a><a href="mailto:contact@madduck.tech">contact@madduck.tech</a></div></footer>
   </body>
 </html>

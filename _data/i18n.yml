@@ -81,17 +81,18 @@ ru:
 
   backchannel:
     title: Backchannel — заметки со встреч на вашем компьютере
-    description: Расшифровка в реальном времени, саммари и задачи по каждому звонку. Всё работает на вашем компьютере.
+    description: Расшифровка в реальном времени, сводка и задачи по каждому звонку. Всё работает на вашем компьютере.
     nav_tour: Экраны
     nav_features: Возможности
+    nav_contact: Связаться
     badge: Работает целиком на&nbsp;вашем компьютере
     hero_title: Заметки со&nbsp;встреч, которые не&nbsp;покидают ваш ноутбук.
-    hero_lead: Расшифровка в&nbsp;реальном времени, саммари и&nbsp;задачи по&nbsp;каждому звонку. Бесплатно, Open-source, без регистрации.
-    hero_alt: Завершённая встреча — расшифровка слева, саммари с главным и задачами справа
+    hero_lead: Расшифровка в&nbsp;реальном времени, сводка и&nbsp;задачи по&nbsp;каждому звонку. Без облака и&nbsp;без регистрации.
+    hero_alt: Завершённая встреча — расшифровка слева, сводка с главным и задачами справа
+    cta_contact: Связаться с&nbsp;нами
     cta_tour: Посмотреть экраны
-    cta_features: Возможности
     tour_title: Четыре экрана — весь продукт.
-    tour_lead: От первой записи до саммари, которое вы отправляете команде.
+    tour_lead: От первой записи до сводки, которую вы отправляете команде.
     tour_label: Экраны приложения
     tabs:
       - label: Запись
@@ -101,21 +102,25 @@ ru:
       - label: Итоги
         shot: review
         caption: После звонка — главное и задачи, и у каждой ссылка на момент, когда это прозвучало.
-        alt: Завершённая встреча с саммари
+        alt: Завершённая встреча со сводкой
       - label: Модель расшифровки
         shot: models
         caption: Введите язык — список сузится до моделей, которые его понимают. Модель скачивается один раз и работает локально.
         alt: Каталог моделей расшифровки, отфильтрованный по языку
-      - label: Кто пишет саммари
+      - label: Кто пишет сводку
         shot: providers
-        caption: По умолчанию — встроенная модель. Ollama, ваш API-ключ, Claude Code или Codex — когда захотите.
-        alt: Выбор того, кто пишет саммари
+        caption: По умолчанию — встроенная модель. Ollama, облачный провайдер с вашим ключом, Claude Code или Codex — когда захотите.
+        alt: Выбор того, кто пишет сводку
     card_local_title: Ничего не&nbsp;загружается
-    card_local_text: Расшифровка и&nbsp;саммари по&nbsp;умолчанию делаются на&nbsp;устройстве. Облачный сервис используется, только если вы&nbsp;сами его выбрали и&nbsp;указали свой ключ.
+    card_local_text: Расшифровка и&nbsp;сводки по&nbsp;умолчанию делаются на&nbsp;устройстве. Облачный сервис используется, только если вы&nbsp;сами его выбрали и&nbsp;указали свой ключ.
     card_lang_title: Ваш язык
     card_lang_text: 96 моделей расшифровки, в&nbsp;том числе для русского. Введите язык&nbsp;— останутся те, что с&nbsp;ним работают.
-    card_free_title: Бесплатно и&nbsp;Open-source
-    card_free_text: Лицензия MIT. Без платных тарифов, ключей активации и&nbsp;телеметрии.
+    card_account_title: Без аккаунта
+    card_account_text: Не&nbsp;нужно регистрироваться и&nbsp;входить. Приложение работает сразу после установки.
+    contact_title: Хотите попробовать Backchannel в&nbsp;своей команде?
+    contact_text: Напишите нам&nbsp;— расскажем, как получить приложение, и&nbsp;ответим на&nbsp;вопросы.
+    contact_button: Написать письмо
+    contact_subject: Backchannel
     footer: Backchannel · сделано в Mad Duck
 en:
   skip: Skip to content
@@ -202,12 +207,13 @@ en:
     description: Live transcript, summary and action items for every call. Everything runs on your computer.
     nav_tour: Tour
     nav_features: Features
+    nav_contact: Contact
     badge: Runs entirely on your computer
     hero_title: Meeting notes that never leave your laptop.
-    hero_lead: Live transcript, summary and action items for every call. Free, open source, no sign-up.
+    hero_lead: Live transcript, summary and action items for every call. No cloud, no sign-up.
     hero_alt: A finished meeting — the transcript on the left, the summary with key points and action items on the right
+    cta_contact: Contact us
     cta_tour: Take the tour
-    cta_features: Features
     tour_title: Four screens, the whole product.
     tour_lead: From the first recording to the summary you send around.
     tour_label: App screens
@@ -226,12 +232,16 @@ en:
         alt: The transcription model catalogue filtered by language
       - label: Choose a summariser
         shot: providers
-        caption: The built-in model by default. Ollama, your own API key, Claude Code or Codex when you want them.
+        caption: The built-in model by default. Ollama, a cloud provider with your own key, Claude Code or Codex when you want them.
         alt: Choosing who writes the summary
     card_local_title: Nothing uploaded
     card_local_text: Transcription and the summary run on the device by default. A cloud provider is used only if you pick one and give it your key.
     card_lang_title: Your language
     card_lang_text: 96 transcription models. Type a language and pick from the ones that handle it.
-    card_free_title: Free and open source
-    card_free_text: MIT licence. No paid tier, no licence key, no telemetry.
+    card_account_title: No account
+    card_account_text: No sign-up and no login. The app works as soon as it is installed.
+    contact_title: Want to try Backchannel with your team?
+    contact_text: Write to us and we will tell you how to get the app and answer your questions.
+    contact_button: Write an email
+    contact_subject: Backchannel
     footer: Backchannel · made at Mad Duck
